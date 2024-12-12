@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #444;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Layout Exercise Notes</h1>
+    
+    <h2>Level 1: Golden Layout (Header, Sidebars, Main Content)</h2>
+    <p>The goal is to create a structured layout with a header, two sidebars, and a main content area using CSS Grid. This layout allows you to easily organize content across rows and columns.</p>
+    <p>Key concepts include:</p>
+    <ul>
+        <li>Using <strong>grid-template-areas</strong> to define specific sections (like header, main content, and sidebars).</li>
+        <li>Setting <strong>grid-template-columns</strong> and <strong>grid-template-rows</strong> to control the size and proportion of each section.</li>
+        <li>Creating a flexible layout where sections are easily aligned in the grid.</li>
+    </ul>
+
+    <h2>Level 2: Handling Overflow and Responsiveness</h2>
+    <p>In this level, the focus is on ensuring content in the main content area doesn't overflow and creating a responsive layout that adapts to different screen sizes.</p>
+    <p>Key concepts include:</p>
+    <ul>
+        <li>Managing content overflow using the <strong>overflow</strong> property to make sure content stays within its allocated area.</li>
+        <li>Using <strong>media queries</strong> to adjust the layout for smaller screens (e.g., stacking elements or changing column widths).</li>
+        <li>Ensuring the grid remains flexible and consistent across various devices and resolutions.</li>
+    </ul>
+
+    <h2>Level 3: Advanced Grid Sizing with minmax()</h2>
+    <p>This level introduces advanced grid techniques, particularly the use of the <strong>minmax()</strong> function, which helps create flexible grid areas that adapt to available space while maintaining a minimum size.</p>
+    <p>Key concepts include:</p>
+    <ul>
+        <li>Using <strong>minmax()</strong> to define flexible grid rows and columns that adjust between a minimum and maximum value.</li>
+        <li>Naming grid areas dynamically to allow for easier layout changes as the screen size adjusts.</li>
+        <li>Refining responsiveness by modifying grid templates at different screen sizes, ensuring a consistent, well-organized layout on both large and small screens.</li>
+    </ul>
+
+</body>
+</html>

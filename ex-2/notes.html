@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables - Levels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Learn CSS Variables</h1>
+
+    <section>
+        <h2>Level 1: Basic Use of CSS Variables</h2>
+        <ul>
+            <li><strong>Define CSS Variables:</strong> In this level, you define basic CSS variables in a separate file (e.g., <code>variables.css</code>) for easy management of reusable values across your stylesheet.</li>
+            <ul>
+                <li>Variables can include:
+                    <ul>
+                        <li>Colors (e.g., <code>--primary-color</code>, <code>--secondary-color</code>)</li>
+                        <li>Font sizes (e.g., <code>--header-font-size</code>, <code>--body-font-size</code>)</li>
+                        <li>Spacing (e.g., <code>--margin-spacing</code>)</li>
+                    </ul>
+                </li>
+            </ul>
+            <li><strong>Link Variables to Main CSS:</strong> You link your <code>variables.css</code> to the main stylesheet using <code>@import</code>, allowing you to use these variables throughout your site.</li>
+            <li><strong>Apply Variables:</strong> Use the defined variables in your CSS to style elements (e.g., applying colors, font sizes, margins).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Level 2: Advanced Use of CSS Variables</h2>
+        <ul>
+            <li><strong>Default Values for Variables:</strong> When defining CSS variables, you can provide a fallback value using <code>var(--variable, fallback)</code>. If the variable is not set, the fallback will be used.
+                <ul>
+                    <li>Example: <code>color: var(--primary-color, black);</code></li>
+                </ul>
+            </li>
+            <li><strong>Targeting Specific Elements:</strong> Use CSS selectors like <code>nth-child</code> to style specific elements. For example, alternate rows of a table can be styled differently. This helps with more complex styling, like creating striped tables.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Level 3: Dynamic Theming and Nested Variables</h2>
+        <ul>
+            <li><strong>Using Variables to Define Other Variables:</strong> You can use one variable to define another, making your CSS even more flexible.
+                <ul>
+                    <li>Example: <code>--secondary-color: var(--primary-color);</code></li>
+                </ul>
+            </li>
+            <li><strong>Dynamic Theme Switching:</strong> This level introduces the concept of creating multiple themes (like light and dark modes) using CSS variables. By toggling classes (e.g., <code>.dark-mode</code>), you can easily change the entire theme by updating variables for colors, background, text, etc.
+                <ul>
+                    <li>This can be achieved using JavaScript to toggle classes or by using media queries to automatically detect the user's preference (e.g., <code>prefers-color-scheme</code>).</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>

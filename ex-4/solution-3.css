@@ -1,0 +1,91 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 2vw; /* Fluid padding */
+  }
+  
+  .header h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Fluid typography */
+  }
+  
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr)); /* Flexible grid */
+    gap: 2vw;
+    padding: 5vw; /* Fluid padding */
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    justify-items: center; /* Center grid items */
+  }
+  
+  /* Book card styling */
+  .book-card {
+    background-color: white;
+    padding: 2vw; /* Fluid padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Flexible width */
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .book-title {
+    font-size: clamp(1.5rem, 4vw, 2.2rem); /* Fluid typography */
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .book-author {
+    font-size: clamp(1rem, 3vw, 1.5rem); /* Fluid typography */
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .book-genre {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* Fluid typography */
+    color: #888;
+    margin-bottom: 1.5rem;
+  }
+  
+  .book-description {
+    font-size: clamp(0.9rem, 2vw, 1.1rem); /* Fluid typography */
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 2vw; /* Fluid padding */
+    margin-top: auto;
+  }
+  
+  /* General Responsive Design */
+  /* Avoid fixed breakpoints, fluid elements adjust naturally */
+  
