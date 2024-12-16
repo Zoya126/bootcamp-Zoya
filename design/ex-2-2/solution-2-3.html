@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Level 3 - Complete Layout</title>
-  <link rel="stylesheet" href="solution-1.css">
-  <link rel="stylesheet" href="variable-1.css">
+  <link rel="stylesheet" href="solution-2-3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <h1>Complete Layout with Content</h1>
+    <h1>Shopping Zone</h1>
   </header>
 
   <div class="container">
@@ -24,7 +24,7 @@
     <main class="main-content">
       <section>
         <h2>Item List</h2>
-        <p>This section lists items that are available for purchase, including their name, price, and description.</p>
+        <p class="regular-text">This section lists items that are available for purchase, including their name, price, and description.</p>
         <table>
           <thead>
             <tr>
@@ -51,22 +51,39 @@
             </tr>
           </tbody>
         </table>
-        <img src="https://t4.ftcdn.net/jpg/03/23/77/27/360_F_323772708_sDus3feYRxqe4mtUnOUpyGIS4KjdRar9.jpg" alt="Image showcasing items on sale with price tags." />
+        <img src="https://t4.ftcdn.net/jpg/03/23/77/27/360_F_323772708_sDus3feYRxqe4mtUnOUpyGIS4KjdRar9.jpg" alt="Image showcasing items on sale with price tags." style="width: 400px; height: 300px; margin-left: 160px" />
+      </section>
+
+      <div class="contrast-demo">
+        <div class="section section-1" style="color: white;">
+            <h2>Section 1: High Contrast (Dark Background)</h2>
+            <p>This section demonstrates high contrast with a dark background and white text.</p>
+        </div>
+        <div class="section section-2">
+            <h2>Section 2: High Contrast (Light Background)</h2>
+            <p>This section demonstrates high contrast with a light background and dark text.</p>
+        </div>
+    </div>
+      <section class="card">
+        <h2>Featured Product</h2>
+        <p>This is a special item featured on our website. Check it out!</p>
+        <button>Buy Now</button>
       </section>
 
       <article>
         <h2>Special Offers</h2>
-        <p>Here are some special offers available for a limited time:</p>
+        <p class="bold-text">Here are some special offers available for a limited time:</p>
         <ul>
           <li>Offer 1: Buy 1, Get 1 Free on select items!</li>
           <li>Offer 2: 20% off on all items over $25!</li>
           <li>Offer 3: Free shipping on all orders above $50!</li>
         </ul>
-    
+        <button id="toggle-offers">Toggle Special Offers</button>
+      </article>
 
       <aside>
         <h3>Customer Support</h3>
-        <p>Need help? Our customer support team is here for you 24/7.</p>
+        <p class="italic-text">Need help? Our customer support team is here for you 24/7.</p>
         <ul>
           <li>Email: support@example.com</li>
           <li>Phone: 1-800-123-4567</li>
@@ -79,6 +96,16 @@
         <p>If you're a book lover, you're in the right place! Check out our latest collection of books.</p>
         <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9vayUyMHNhbGV8ZW58MHx8MHx8fDA%3D" alt="A collection of books on a shelf showcasing various genres." style="width: 300px; height: 200px; margin-left: 160px" />
       </section>
+      <section class="voucher-card-section">
+       <div class="voucher-card">
+        <h3>Buy Voucher & Redeem Later</h3>
+          <p class="voucher-description">Get a voucher now and redeem it at your convenience! Perfect for gifting or future purchases.</p>
+         <div class="voucher-price">
+         <span>$50</span>
+         <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+</section>
     </main>
 
     <nav class="sidebar right-sidebar">
@@ -93,5 +120,16 @@
   <footer class="footer">
     <p>Contact: example@email.com</p>
   </footer>
+
+  <script>
+    document.getElementById('toggle-offers').addEventListener('click', function() {
+      const offersSection = document.querySelector('article');
+      if (offersSection.style.display === 'none') {
+        offersSection.style.display = 'block';
+      } else {
+        offersSection.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>

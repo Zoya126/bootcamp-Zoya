@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Geist', sans-serif;
+    line-height: 1.6;
+    background-color: #f2e8dc; 
+    color: #2a2a72; 
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar ul li a i {
+    font-size: 1.5rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Geist', sans-serif;
+    line-height: 1.6;
+    background-color: #f2e8dc; 
+    color: #2a2a72; 
+    padding: 20px;
+}
+
+.sidebar-2 {
+    background-color: #0e1e69e3;
+    color: #2a2a72; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.sidebar-2 ul {
+    list-style: none;
+}
+
+.sidebar-2 ul li {
+    margin: 10px 0;
+}
+
+.sidebar-2 ul li a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.sidebar-2 ul li a:hover {
+    color: #f2e8dc; 
+}
+
+
+
+.header {
+    background-color: #b3cb18d1; 
+    color: #00ffff; 
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000000; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.sidebar {
+    background-color: #0e1e69e3;
+    color: #2a2a72; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.left-sidebar {
+    background-color: #05124c; 
+}
+
+.right-sidebar {
+    background-color: #05124c;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    color: #f2e8dc; 
+}
+
+.main-content {
+    width: 55%;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2a2a72; 
+    color: #00ffff; 
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #ff69b4; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ff1493; 
+}
+
+
+.main-content img,
+aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+aside img {
+    margin-left: 0;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2a2a72; 
+    color: #00ffff; 
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #ff69b4; 
+}
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 20px;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn i {
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}

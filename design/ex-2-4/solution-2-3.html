@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest-Inspired Image Gallery</title>
+  <link rel="stylesheet" href="solution-2-3.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Art Gallery</h1>
+  </header> 
+
+  <main class="gallery">
+    <!-- First Image Card -->
+    <div class="image-card">
+      <picture>
+        <source srcset="https://picsum.photos/id/1015/600/800" media="(min-width: 768px)">
+        <source srcset="https://picsum.photos/id/1015/300/400" media="(max-width: 767px)">
+        <img src="https://picsum.photos/id/1015/300/400" alt="Placeholder 1" loading="lazy">
+      </picture>
+      <p class="caption">Explore the world with us!</p>
+    </div>
+
+    <!-- Second Image Card -->
+    <div class="image-card">
+      <picture>
+        <source srcset="https://picsum.photos/id/1016/600/800" media="(min-width: 768px)">
+        <source srcset="https://picsum.photos/id/1016/300/400" media="(max-width: 767px)">
+        <img src="https://picsum.photos/id/1016/300/400" alt="Placeholder 2" loading="lazy">
+      </picture>
+      <p class="caption">Capture moments that matter.</p>
+    </div>
+
+    <!-- Third Image Card -->
+    <div class="image-card">
+      <picture>
+        <source srcset="https://picsum.photos/id/1018/600/800" media="(min-width: 768px)">
+        <source srcset="https://picsum.photos/id/1018/300/400" media="(max-width: 767px)">
+        <img src="https://picsum.photos/id/1018/300/400" alt="Placeholder 3" loading="lazy">
+      </picture>
+      <p class="caption">Find beauty in simplicity.</p>
+    </div>
+  </main>
+</body>
+</html>
