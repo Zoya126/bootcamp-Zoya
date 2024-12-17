@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6: YAML Configuration</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.1em;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .level-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .level-container ul {
+            padding-left: 20px;
+        }
+        footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the footer */
+    position: fixed; /* Fix the footer at the bottom */
+    width: 100%; /* Make it span the entire width */
+    bottom: 0; /* Align at the bottom of the page */
+}
+
+footer a {
+    color: #4CAF50; /* Green color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+    </style>
+</head>
+<body>
+
+    <h1>Exercise 5: Managing Environment Variables (dotenv)</h1>
+
+    <div class="level-container">
+        <h2>Level 1: Level 1: Basic Environment Variable Setup</h2>
+        <p>Install `dotenv` library
+            Create a `.env` file
+            Define configuration variables like PORT and DB_HOST
+            Load and use variables in the program</p>
+        <ul>
+            <h2>Exit Criteria</h2>
+            <li>Successful reading of variables from `.env` file</li>
+            <li>Configuration variables are correctly loaded into the application.</li>
+            <li>Loaded and used configuration values in the program.</li>
+        </ul>
+        <pre><code>npm install config js-yaml</code></pre>
+        <div class="image-container">
+            <img src="../img/5-1.png" alt="Level 1 Image">
+        </div>
+    </div>
+
+    <div class="level-container">
+        <h2>Level 2: Handling Missing Environment Variables</h2>
+        <p>Add fallback values for missing environment variables
+            Implement logging mechanism for missing variables
+            Ensure application continues to function with default configurations <ul>
+           
+        <div class="image-container">
+            <img src="../img/5-2.png" alt="Level 2 Image">
+        </div>
+    </div>
+
+    <div class="level-container">
+        <h2>Level 3: Secure Configuration Management </h2>
+        <p>IConfigure database connection using environment variables
+            Manage API credentials securely
+            Use SQLite as a file-based database
+            Implement secure logging of configuration details </p>
+        <div class="image-container">
+            <img src="../img/5-3.png" alt="Level 3 Image">
+        </div>
+
+    </div>  
+        <footer>
+            <a href="https://chatgpt.com/share/6761da12-8644-800d-8964-b8ed0c93fbac" target="_blank">AI - Conversation</a>
+        </footer>
+   
+    
+
+</body>
+</html>

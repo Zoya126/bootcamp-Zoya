@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6: YAML Configuration</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.1em;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .level-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .level-container ul {
+            padding-left: 20px;
+        }
+        footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the footer */
+    position: fixed; /* Fix the footer at the bottom */
+    width: 100%; /* Make it span the entire width */
+    bottom: 0; /* Align at the bottom of the page */
+}
+
+footer a {
+    color: #4CAF50; /* Green color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+    </style>
+</head>
+<body>
+
+    <h1>Exercise 4: Debugging (debug)</h1>
+
+<div class="level-container">
+    <h2>Level 1: Basic Debugging</h2>
+    <p>I installed the <code>debug</code> package and set up a namespace for debugging. I used the <code>debug</code> function to log messages in a single module, and the debug messages are displayed when the <code>DEBUG</code> environment variable is set.</p>
+    <ul>
+        <li>Installed the <code>debug</code> package.</li>
+        <li>Set up a namespace for debugging in a single module.</li>
+        <li>Logged messages using the <code>debug</code> function.</li>
+    </ul>
+    <pre><code>npm install debug</code></pre>
+    <div class="image-container">
+        <img src="../img/4-1.png" alt="Level 1 Image">
+    </div>
+</div>
+
+<div class="level-container">
+    <h2>Level 2: Multiple Modules Debugging</h2>
+    <p>I extended the program with multiple modules, each having its own debug namespace. I used environment variables to selectively enable debugging for specific modules based on the <code>DEBUG</code> environment variable.</p>
+    <ul>
+        <li>Created multiple modules, each with a unique debug namespace.</li>
+        <li>Used the <code>DEBUG</code> environment variable to enable debugging for specific modules.</li>
+    </ul>
+    <div class="image-container">
+        <img src="../img/4-2.png" alt="Level 2 Image">
+    </div>
+</div>
+
+<div class="level-container">
+    <h2>Level 3: Structured Debugging with Winston</h2>
+    <p>I combined <code>debug</code> with <code>winston</code> for structured debugging and logging. I used both tools to debug and log a complex program scenario, enhancing the compute program to be interactive.</p>
+    <ul>
+        <li>Integrated <code>debug</code> and <code>winston</code> for structured logging.</li>
+        <li>Debugged and logged an interactive program with complex scenarios.</li>
+    </ul>
+    <div class="image-container">
+        <img src="../img/4-3.png" alt="Level 3 Image">
+    </div>
+</div>
+
+<footer>
+    <a href="https://chatgpt.com/share/6761fb58-5aa0-800d-9d93-be9c9efa0578" target="_blank">AI - Conversation </a>
+</footer>
+
+
+</body>
+</html>

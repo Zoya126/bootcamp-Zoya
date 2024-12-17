@@ -1,0 +1,8 @@
+logging:
+  level: "debug"
+
+functions:
+  - name: "sin"
+    file: "./functions/sin.js"
+  - name: "cos"
+    file: "./functions/cos.js"

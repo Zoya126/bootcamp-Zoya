@@ -1,0 +1,7 @@
+app:
+  port: 8080
+database:
+  host: "prod-db-server"
+  port: 5432
+  user: "produser"
+  password: "prodpassword"
