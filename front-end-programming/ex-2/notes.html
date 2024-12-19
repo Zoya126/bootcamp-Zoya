@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Project Setup Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .note-section {
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 45%;
+            margin: 0 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+    <div class="note-section">
+        <h2>1. Initialize a New Project Using a Package Manager</h2>
+        <ul>
+            <li>Start by initializing a new npm project using:
+                <code>npm init -y</code>
+            </li>
+            <li>Install TypeScript and other necessary packages:
+                <code>npm install typescript --save-dev</code>
+            </li>
+            <li>Create a <code>tsconfig.json</code> file for TypeScript configuration:
+                <code>npx tsc --init</code>
+            </li>
+        </ul>
+    </div>
+
+    <div class="note-section">
+        <h2>2. Configure TypeScript Using a <code>tsconfig.json</code> File</h2>
+        <ul>
+            <li>Modify the <code>tsconfig.json</code> to include the necessary options for your project, such as setting the <code>target</code>, <code>module</code>, and <code>outDir</code>.</li>
+            <li>Example configuration:
+                <pre>
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
+                </pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="note-section">
+        <h2>3. Problems to Solve</h2>
+
+        <h3>Problem 1: Load a JSON file, render a table dynamically, and include sorting functionality</h3>
+        <ul>
+            <li>Use TypeScript to load the JSON file and dynamically render a table.</li>
+            <li>Implement sorting functionality for the table columns.</li>
+        </ul>
+
+        <h3>Problem 2: Fetch Data from a CSV File Using PapaParse</h3>
+        <ul>
+            <li>Use the <code>PapaParse</code> library to fetch and parse CSV data.</li>
+            <li>Enhance the table with column filtering and row highlighting features.</li>
+        </ul>
+
+        <h3>Problem 3: Integrate a Build Tool (e.g., tsc for Transpilation)</h3>
+        <ul>
+            <li>Set up the <code>tsc</code> tool for transpilation from TypeScript to JavaScript.</li>
+            <li>Ensure the app works in both development and production environments.</li>
+        </ul>
+    </div>
+
+    <div class="note-section">
+        <h2>4. Dev, Test, and Production Life Cycle</h2>
+        <ul>
+            <li>Use <code>vite</code> in your <code>package.json</code> for:
+                <ul>
+                    <li>Development server with live reload.</li>
+                    <li>Linting and type-checking during development.</li>
+                    <li>Production build with bundling.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p><a href="https://chatgpt.com/share/67638f67-1e4c-800d-8043-3b26fa8dc82d" target="_blank">AI-conversation</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise: Color Selection and Variations Exploration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .color-picker {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sample-page {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .sample-page h3, .sample-page p {
+            color: #333;
+        }
+        .color-display {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .color-display div {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercise: Color Selection and Variations Exploration</h1>
+
+    <h2>Key Knowledge Points</h2>
+
+    <h3>Layout and User Interaction</h3>
+    <ul>
+        <li>To allow the user to interact with color selection, we can create color pickers (e.g., using <code>input type="color"</code> or sliders for different properties like saturation, lightness, or opacity).</li>
+        <li>The user can select one or more colors, and the results will be displayed on a sample page, showing how those colors affect text, background, and other elements.</li>
+        <li>Interaction can include selecting colors for headers, paragraphs, and background elements, allowing the user to see how different combinations work together.</li>
+    </ul>
+
+    <h3>Sample HTML Page and Color Scheme</h3>
+    <ul>
+        <li>We can create a sample HTML page with headers, text, tables, and images, where the user’s color selections will be applied to different elements.</li>
+        <li>For example, changing the background color of the header, the text color of paragraphs, or the border color of images.</li>
+        <li>This allows the user to see how their color choices impact the overall design of a webpage.</li>
+    </ul>
+
+    <h3>Variations of Color</h3>
+    <ul>
+        <li>To show variations of a selected color, we can adjust properties like saturation, lightness, and opacity.</li>
+        <li>For example, a color picker for saturation can allow the user to adjust the intensity of the color, while a lightness slider can make the color lighter or darker.</li>
+        <li>Opacity can be controlled using an alpha channel, showing how the color appears with transparency.</li>
+        <li>These variations allow the user to explore how subtle changes in color properties affect the visual appearance of the page.</li>
+    </ul>
+
+    <h3>Letting the User Interact with the System</h3>
+    <ul>
+        <li>The user can adjust the color of individual elements like text, backgrounds, borders, and buttons using various controls.</li>
+        <li>Interactive elements such as color pickers, sliders, and checkboxes can give the user control over the page’s appearance.</li>
+        <li>We can also include options for the user to see color combinations and preview how they would look on a real page.</li>
+    </ul>
+
+    <h3>Example: Color Display</h3>
+    <div class="color-picker">
+        <label for="color1">Select a Color: </label>
+        <input type="color" id="color1" name="color1" value="#ff0000" onchange="updateColor()">
+    </div>
+
+    <div class="sample-page">
+        <h3>Sample Page with Color Changes</h3>
+        <p id="sampleText">This is a sample paragraph. The color of this text will change based on your selection.</p>
+        <div class="color-display">
+            <div id="colorDisplay" style="background-color: #ff0000;">Selected Color: Red</div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="" target="https://chatgpt.com/share/67631ebe-36e4-800d-9095-99c360c70acd">AI - Conversation </a>
+    </footer>
+
+    <script>
+        function updateColor() {
+            var selectedColor = document.getElementById("color1").value;
+            document.getElementById("sampleText").style.color = selectedColor;
+            document.getElementById("colorDisplay").style.backgroundColor = selectedColor;
+            document.getElementById("colorDisplay").innerText = "Selected Color: " + selectedColor;
+        }
+    </script>
+
+</body>
+</html>

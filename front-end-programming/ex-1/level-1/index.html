@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333;">
+    <h1 style="text-align: center; padding: 20px; margin: 0; background-color: #007acc; color: white; font-size: 2rem;">Student Management Dashboard</h1>
+    <div style="max-width: 900px; margin: 20px auto; padding: 20px; background-color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <button id="addStudentBtn" style="padding: 10px 20px; margin: 10px 5px; font-size: 1rem; color: white; background-color: #007acc; border: none; border-radius: 4px; cursor: pointer;">Add Student</button>
+        <button id="changeFontBtn" style="padding: 10px 20px; margin: 10px 5px; font-size: 1rem; color: white; background-color: #007acc; border: none; border-radius: 4px; cursor: pointer;">Change Font</button>
+        <table id="studentTable" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left; background-color: #007acc; color: white; text-transform: uppercase; font-weight: bold;">ID</th>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left; background-color: #007acc; color: white; text-transform: uppercase; font-weight: bold;">Name</th>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left; background-color: #007acc; color: white; text-transform: uppercase; font-weight: bold;">Age</th>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left; background-color: #007acc; color: white; text-transform: uppercase; font-weight: bold;">Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <div id="browserInfo" style="margin-top: 20px; padding: 10px; background-color: #f4f4f4; border-radius: 4px; font-size: 0.9rem; color: #555;">
+            <!-- Browser info will be displayed here -->
+        </div>
+    </div>
+    <footer style="text-align: center; padding: 10px; margin-top: 20px; background-color: #007acc; color: white; font-size: 0.9rem;">
+        Student Management Dashboard © 2024
+    </footer>
+
+    <script>
+        // Toggle font between default and Google font
+        let isGoogleFontApplied = false;
+
+        document.getElementById('changeFontBtn').addEventListener('click', () => {
+            const linkId = 'googleFontLink';
+            if (!isGoogleFontApplied) {
+                const link = document.createElement('link');
+                link.id = linkId;
+                link.rel = 'stylesheet';
+                link.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap';
+                document.head.appendChild(link);
+                document.body.style.fontFamily = "'Roboto', sans-serif";
+            } else {
+                const existingLink = document.getElementById(linkId);
+                if (existingLink) existingLink.remove();
+                document.body.style.fontFamily = 'Arial, sans-serif';
+            }
+            isGoogleFontApplied = !isGoogleFontApplied;
+        });
+
+        // Add student row dynamically
+        document.getElementById('addStudentBtn').addEventListener('click', () => {
+            const table = document.getElementById('studentTable').querySelector('tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td style="border: 1px solid #ddd; padding: 12px;">1</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">John Doe</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">18</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">A</td>
+            `;
+            newRow.style.backgroundColor = '#fffae6';
+            newRow.style.color = '#333';
+            newRow.style.border = '2px solid #f0c674';
+            table.appendChild(newRow);
+        });
+
+        // Display browser info
+        const browserInfoDiv = document.getElementById('browserInfo');
+        browserInfoDiv.innerHTML = `
+            <p><strong>Browser Name:</strong> ${navigator.appName}</p>
+            <p><strong>Browser Version:</strong> ${navigator.appVersion}</p>
+            <p><strong>Window Dimensions:</strong> ${window.innerWidth} x ${window.innerHeight}</p>
+            <p><strong>User Agent:</strong> ${navigator.userAgent}</p>
+        `;
+    </script>
+</body>
+</html>

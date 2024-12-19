@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Color Picker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      padding: 20px;
+    }
+    #color-picker {
+      margin-right: 20px;
+    }
+    #color-preview {
+      flex-grow: 1;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    header h1 {
+      color: var(--header-color);
+    }
+    p {
+      color: var(--text-color);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table th, table td {
+      padding: 10px;
+      border: 1px solid var(--table-border-color);
+    }
+    button {
+      background-color: var(--button-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="color-picker">
+    <h3>Pick Colors</h3>
+    <label for="header-color">Header Color</label><br>
+    <input type="color" id="header-color" value="#ff0000"><br><br>
+    <label for="text-color">Text Color</label><br>
+    <input type="color" id="text-color" value="#000000"><br><br>
+    <label for="button-color">Button Color</label><br>
+    <input type="color" id="button-color" value="#4CAF50"><br><br>
+    <label for="table-border-color">Table Border Color</label><br>
+    <input type="color" id="table-border-color" value="#dddddd"><br><br>
+    <label for="opacity">Opacity</label><br>
+    <input type="range" id="opacity" min="0" max="1" step="0.01" value="1"><br><br>
+  </div>
+
+  <div id="color-preview">
+    <header>
+      <h1>Sample Page</h1>
+      <h2>Interactive Color Preview</h2>
+    </header>
+    <section>
+      <p>This is a sample paragraph where you can see the selected colors applied to text.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+          </tr>
+        </tbody>
+      </table>
+      <button>Sample Button</button>
+    </section>
+  </div>
+
+  <script>
+    document.querySelectorAll('input[type="color"], input[type="range"]').forEach(input => {
+      input.addEventListener('input', updateColors);
+    });
+
+    function updateColors() {
+      const headerColor = document.getElementById('header-color').value;
+      const textColor = document.getElementById('text-color').value;
+      const buttonColor = document.getElementById('button-color').value;
+      const tableBorderColor = document.getElementById('table-border-color').value;
+      const opacity = document.getElementById('opacity').value;
+
+      document.documentElement.style.setProperty('--header-color', headerColor);
+      document.documentElement.style.setProperty('--text-color', textColor);
+      document.documentElement.style.setProperty('--button-color', buttonColor);
+      document.documentElement.style.setProperty('--table-border-color', tableBorderColor);
+      document.documentElement.style.setProperty('--opacity', opacity);
+    }
+  </script>
+</body>
+</html>
