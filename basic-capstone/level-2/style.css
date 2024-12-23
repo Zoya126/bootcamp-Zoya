@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;
+  }
+  
+  /* Container for the weather widget */
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation links */
+  .navigation {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Style for navigation links */
+  .navigation a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2563eb;
+  }
+  
+  /* Active navigation link style */
+  .navigation a.active {
+    text-decoration: underline;
+  }
+  
+  /* Form styling */
+  .search-form {
+    margin-bottom: 2rem;
+  }
+  
+  /* Input group for search form */
+  .input-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  /* Input field styling */
+  input[type='text'] {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background: #1d4ed8;
+  }
+  
+  /* Back button styling */
+  .back-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Back button hover effect */
+  .back-button:hover {
+    background: #1d4ed8;
+  }
+  

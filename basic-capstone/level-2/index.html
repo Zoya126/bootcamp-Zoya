@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script type="module" src="weather-widget.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="page2.html">Page 2</a>
+    </nav>
+
+    <h1>Weather Dashboard</h1>
+
+    <form id="city-form" class="search-form" onsubmit="redirectToPage2(event)">
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="city-input" 
+          name="city" 
+          placeholder="Enter city name" 
+          required
+        />
+        <button type="submit">
+          Check Weather
+        </button>
+      </div>
+    </form>
+
+    <city-weather city="Los Angeles"></city-weather>
+  </div>
+
+  <script>
+    function redirectToPage2(event) {
+      event.preventDefault();
+      const city = document.getElementById('city-input').value;
+      window.location.href = `page2.html?city=${city}`;
+    }
+  </script>
+</body>
+</html>

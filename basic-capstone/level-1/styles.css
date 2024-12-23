@@ -1,0 +1,240 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --background-color: #f4f7fa;
+  --card-bg-color: #fff;
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Sidebar Styles */
+#filters {
+  width: 300px;
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+#filters h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+#filters select,
+#filters input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all var(--transition-speed) ease;
+}
+
+#filters select:focus,
+#filters input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Content Area Styles */
+#content {
+  flex-grow: 1;
+  margin-left: 340px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#search {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all var(--transition-speed) ease;
+}
+
+#search:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+#paper-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-speed) ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.card strong {
+  color: var(--primary-color);
+}
+
+/* Button Styles */
+button {
+  background-color: var(--primary-color);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color:rgb(15, 85, 87);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Pagination Styles */
+.pagination {
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: calc(100% - 40px);
+  padding: 5px;
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius);
+}
+
+.pagination::-webkit-scrollbar {
+  height: 6px;
+}
+
+.pagination::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.pagination::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.pagination button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  white-space: nowrap;
+}
+
+.pagination button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+#nextPageBtn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#nextPageBtn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
+  #filters {
+      width: 100%;
+      position: static;
+      height: auto;
+      margin-right: 0;
+  }
+
+  #content {
+      margin-left: 0;
+      width: 100%;
+  }
+}
