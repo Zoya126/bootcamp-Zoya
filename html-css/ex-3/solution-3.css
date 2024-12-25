@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #0d2276; /* Blue */
+  --secondary-color: #27ae60; /* Green */
+  --accent-color: #e67e22; /* Orange */
+  --text-color: #333; /* Dark gray */
+  --background-color: #f7f7f7; /* Light gray */
+}
+
+/* General body and container styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4edad7, #c37be8);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh; /* Ensures the body covers the entire screen */
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 15px 0;
+  color: var(--text-color);
+}
+
+/* Features list */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 20px auto;
+  width: 100%; /* Full width */
+  text-align: center;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: var(--text-color);
+}
+
+ul li::before {
+  content: "• ";
+  color: var(--secondary-color); /* Green bullet */
+  font-weight: bold;
+}
+
+/* Blockquote styles */
+blockquote {
+  border-left: 5px solid var(--accent-color); /* Orange border */
+  padding-left: 20px;
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 25px 0;
+  font-size: 1.2rem;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* Code styling */
+code {
+  background-color: #f4f4f4;
+  color: var(--primary-color);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}

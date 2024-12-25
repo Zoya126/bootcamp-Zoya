@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget - Page 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script type="module" src="weather-widget.js"></script>
+  <link rel="stylesheet" href="st">
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Button -->
+    <nav class="navigation">
+      <button onclick="window.location.href='index.html'" class="back-button">Go to Home</button>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>Detailed Weather Information</h1>
+
+    <!-- Weather Widget with Dynamic City -->
+    <city-weather id="weather-widget"></city-weather>
+  </div>
+
+  <script>
+    // Get the city from the URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const city = urlParams.get('city') || 'Los Angeles';  // Default to 'Los Angeles' if no city is provided
+
+    // Set the city attribute on the <city-weather> component
+    const weatherWidget = document.getElementById('weather-widget');
+    weatherWidget.setAttribute('city', city);
+  </script>
+</body>
+</html>

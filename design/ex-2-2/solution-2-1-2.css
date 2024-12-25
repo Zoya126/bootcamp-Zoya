@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Geist', sans-serif;
+    line-height: 1.6;
+    background-color: #f2e8dc;
+    color: #2a2a72;
+    padding: 20px;
+}
+
+
+.header {
+    background-color: #2a2a72;
+    color: #ff9f1c;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.sidebar {
+    background-color: #ff9f1c;
+    color: #2a2a72;
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.left-sidebar {
+    background-color: #ff6f1c;
+}
+
+.right-sidebar {
+    background-color: #ff6f1c;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #2a2a72;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    color: #f2e8dc;
+}
+
+
+.main-content {
+    width: 55%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    color: #2a2a72;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2a2a72;
+    color: #ff9f1c;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #2a2a72;
+    color: #ff9f1c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1e1e5a;
+}
+
+
+.main-content img,
+aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+aside img {
+    margin-left: 0;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2a2a72;
+    color: #ff9f1c;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}

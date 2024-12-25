@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6: YAML Configuration</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.1em;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .level-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .level-container ul {
+            padding-left: 20px;
+        }
+        footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the footer */
+    position: fixed; /* Fix the footer at the bottom */
+    width: 100%; /* Make it span the entire width */
+    bottom: 0; /* Align at the bottom of the page */
+}
+
+footer a {
+    color: #4CAF50; /* Green color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+    </style>
+</head>
+<body>
+
+    <h1>Exercise 2: Command-Line Program</h1>
+
+<div class="level-container">
+    <h2>Level 1: Basic Sum Calculation</h2>
+    <p>I created a script that calculates the sum of numbers passed as command-line arguments. I used <code>process.argv</code> to parse and handle the arguments. The script also includes error handling for invalid inputs, such as non-numeric values.</p>
+    <ul>
+        <li>Created a script to calculate the sum of command-line arguments.</li>
+        <li>Used <code>process.argv</code> to parse and handle the arguments.</li>
+        <li>Implemented error handling for invalid inputs (e.g., non-numeric values).</li>
+    </ul>
+    <pre><code>node sum.js 1 2 3</code></pre>
+    <div class="image-container">
+        <img src="../img/2-1.png" alt="Level 1 Image">
+    </div>
+</div>
+
+<div class="level-container">
+    <h2>Level 2: Multiply Flag</h2>
+    <p>I enhanced the script to accept a <code>--multiply</code> flag to multiply the numbers instead of adding them. I also updated the help text to include usage instructions for both sum and multiply operations.</p>
+    <ul>
+        <li>Added a <code>--multiply</code> flag to perform multiplication.</li>
+        <li>Updated the help text to include usage instructions.</li>
+    </ul>
+    <div class="image-container">
+        <img src="../img/2-2.png" alt="Level 2 Image">
+    </div>
+</div>
+
+<div class="level-container">
+    <h2>Level 3: Modularization and Global Command</h2>
+    <p>I modularized the program by creating a separate file (<code>mathutils.js</code>) for the <code>add</code> and <code>multiply</code> functions. The program now accepts an operation followed by operands as arguments, like <code>command add 1 2</code> or <code>command multiply 3 4</code>. I also created a script using the <code>bin</code> part of the <code>package.json</code> and used <code>npm link</code> to test the script as a global command.</p>
+    <ul>
+        <li>Created a <code>mathutils.js</code> file for the <code>add</code> and <code>multiply</code> functions.</li>
+        <li>Modified the script to accept operation and operands as arguments.</li>
+        <li>Created a global command using <code>npm link</code>.</li>
+    </ul>
+    <div class="image-container">
+        <img src="../img/2-3.png" alt="Level 3 Image">
+    </div>
+</div>
+
+<footer>
+    <a href="https://chatgpt.com/share/6761dfe4-aecc-800d-b34b-d6fbe117e3e4" target="_blank">AI - Conversation</a>
+</footer>
+
+    
+
+</body>
+</html>

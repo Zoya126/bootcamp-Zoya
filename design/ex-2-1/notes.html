@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Exercise - Summary and Challenges Faced</title>
+  
+  <style>
+    /* Basic reset */
+    body, h2, pre {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #444;
+      font-weight: 600;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+      font-size: 1rem;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>Summary of Challenges and Points Overcome</h2>
+    <pre>
+The following are the challenges I faced and the points I overcame and learnt:
+
+1. **Font Weights and System Fonts**: Initially, I faced challenges with applying different font weights to specific classes. After researching, I learned how to use `font-weight` property to control text weights and applied it successfully to various sections.
+
+2. **Google Fonts Integration**: The integration of Google Fonts was easy, but understanding how variable fonts work took time. I learned that variable fonts allow more flexibility with font weight and style, which I demonstrated by applying different weights to various elements.
+
+3. **Text Effects (Drop Cap, Shadow, etc.)**: Implementing the drop cap effect and text shadow was a bit tricky. However, using `::first-letter` pseudo-element for the drop cap and `text-shadow` for the shadow effect helped me achieve the desired results.
+
+4. **Custom Fonts**: Installing and using a custom font like Geist from Vercel was new to me. I had to ensure that the font was correctly loaded from the source and applied to the relevant elements.
+
+5. **Typographic Hierarchy**: Combining multiple font families for creating a typographic hierarchy (e.g., using serif for headings and sans-serif for body text) was essential to give the page a clear structure. I used Google Fonts like Roboto and Courier Prime to achieve this.
+    </pre>
+  </section>
+</body>
+</html>

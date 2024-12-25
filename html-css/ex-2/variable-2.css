@@ -1,0 +1,11 @@
+/* variables.css */
+
+:root {
+    --primary-color: hsl(179, 60%, 65%); /* A vibrant blue */
+    --secondary-color: #081b3e; /* Soft gray */
+    --text-color: #333; /* Dark gray text */
+    --text-color-light: #fff; /* White text */
+    --header-font-size: 30px; /* Larger header font */
+    --subheader-font-size: 22px; /* Larger subheader font */
+    --margin-spacing: 20px; /* Margin spacing */
+  }

@@ -1,0 +1,84 @@
+/* Dark Theme */
+:root {
+  --primary: hsl(210, 100%, 40%);
+  --secondary: hsl(330, 100%, 40%);
+  --background: hsl(0, 0%, 20%);
+  --text-color: hsl(0, 0%, 95%);
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: 'Geist', sans-serif;
+}
+
+.header {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: var(--secondary);
+  color: white;
+  padding: 15px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.color-swatch-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.color-swatch {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.color-swatch p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(210, 100%, 30%);
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+img.overlay-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+img.overlay-image .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: bold;
+}

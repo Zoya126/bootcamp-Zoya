@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4: Vite Full Exercise - Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .img-container img {
+            width: 45%;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercise 4: Vite Full Exercise - Notes</h1>
+
+    <h2>Key Knowledge Points</h2>
+
+    <div class="img-container">
+        <img src="../img/3.2.png" alt="Vite Environment Config">
+        <img src="../img/3.1.png" alt="Vite Plugins">
+    </div>
+
+    <h3>Level 1: Environment-Specific Configurations</h3>
+    <ul>
+        <li>Use <code>.env.development</code> and <code>.env.production</code> files to configure environment-specific settings like API endpoints.</li>
+        <li>The correct environment configuration is automatically loaded based on the command: <code>npm run dev</code> for development and <code>npm run build</code> for production.</li>
+    </ul>
+
+    <h3>Level 2: Advanced Vite Practices</h3>
+    <ul>
+        <li><code>vite-plugin-checker</code> helps integrate TypeScript type-checking during development for faster error detection.</li>
+        <li><code>vite-plugin-eslint</code> ensures linting is performed automatically during development, enforcing code quality standards.</li>
+        <li>Both plugins help catch errors early and improve the quality of your codebase.</li>
+    </ul>
+
+    <h3>Level 3: Performance Optimization</h3>
+    <ul>
+        <li>Lazy loading allows modules to be loaded on demand, reducing the initial loading time of the application.</li>
+        <li>Code splitting divides the application into smaller chunks, which can be loaded independently, improving performance.</li>
+        <li>Vite automatically performs tree-shaking and minification to remove unused code and reduce the final bundle size in production.</li>
+        <li>Testing performance in production helps ensure that the application is optimized for speed and efficiency.</li>
+    </ul>
+
+    <footer>
+        <a href="https://chatgpt.com/share/6762ef21-f390-800d-91ff-8d7c92d391e9" target="_blank">AI - Conversation</a>
+    </footer>
+
+</body>
+</html>

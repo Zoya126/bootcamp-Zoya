@@ -1,0 +1,13 @@
+{
+  "name": "level-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "test -d node_modules || npm install",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

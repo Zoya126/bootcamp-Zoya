@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3: Starting with Vite</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.1em;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .level-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .level-container ul {
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercise 3: Starting with Vite</h1>
+
+    <div class="level-container">
+        <h2>Level 1: JavaScript Template</h2>
+        <p>Initialized a Vite project using the JavaScript template and loaded student data from a JSON file to display in a table.</p>
+        <ul>
+            <li>Initialized Vite with JavaScript template.</li>
+            <li>Loaded student data from a JSON file.</li>
+            <li>Displayed data in a table.</li>
+        </ul>
+        <pre><code>npm create vite@latest my-js-app -- --template vanilla</code></pre>
+    </div>
+    
+
+    <div class="level-container">
+        <h2>Level 2: TypeScript Template</h2>
+        <p>Enhanced the dashboard by fetching data from a CSV file, parsing it using PapaParse, and displaying it using AG Grid.</p>
+        <ul>
+            <li>Initialized Vite with TypeScript template.</li>
+            <li>Fetched data from CSV and parsed it using PapaParse.</li>
+            <li>Displayed data using AG Grid.</li>
+        </ul>
+        <pre><code>npm create vite@latest my-ts-app -- --template vanilla-ts</code></pre>
+    </div>
+
+    <div class="image-container">
+        <img src="../img/3.1.png" alt="Image 1">
+        <img src="../img/3.2.png" alt="Image 2">
+      
+    </div>
+
+
+    <div class="level-container">
+        <h2>Level 3: CSS and SCSS with Loops</h2>
+        <p>Defined CSS classes for margin using a modular approach and created SCSS with loops to generate similar classes.</p>
+        <ul>
+            <li>Defined CSS classes for margin.</li>
+            <li>Created SCSS with loops for dynamic class generation.</li>
+        </ul>
+        <pre><code>@for $i from 1 through 8 { .m-#{$i} { margin: $i * 2px; } }</code></pre>
+    </div>
+
+    <footer>
+        <a href="https://chatgpt.com/share/6761dfe4-aecc-800d-b34b-d6fbe117e3e4" target="_blank">AI - Conversation</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Geist', sans-serif;
+    line-height: 1.6;
+    background-color: #f2e8dc; 
+    color: #2a2a72; 
+    padding: 20px;
+}
+
+/* Header styling with linear gradient */
+.header {
+    background: linear-gradient(135deg, #09524fd1, #2a2a72); /* Gradient background */
+    color: #00ffff; 
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ff69b4; 
+}
+
+/* Container flex layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #2f00ff95;
+    color: #2a2a72; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.left-sidebar {
+    background-color: #05124c; 
+}
+
+.right-sidebar {
+    background-color: #05124c; 
+}
+
+/* Sidebar links styling */
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ff69b4; /* Pink */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    color: #f2e8dc; 
+}
+
+/* Main content styling */
+.main-content {
+    width: 55%;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content headers and paragraphs */
+.main-content h2 {
+    font-size: 2rem;
+    color: #1a0404;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Text styling */
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2a2a72; 
+    color: #00ffff; 
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Button styling with radial gradient */
+button {
+    background: radial-gradient(circle, #ff69b4, #ff1493); /* Radial gradient */
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ff1493; 
+}
+
+/* Image styling */
+.main-content img,
+aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+aside img {
+    margin-left: 0;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2a2a72; 
+    color: #00ffff; 
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #ff69b4; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Color palette with lighten and darken */
+:root {
+    --base-color: #2a2a72;
+    --accent-color: #ff69b4;
+    --background-color: #f2e8dc;
+    --base-color-dark: #591945;
+    --accent-color-dark: #ff3e6b;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--base-color);
+}
+
+button {
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --base-color: var(--base-color-dark);
+        --accent-color: var(--accent-color-dark);
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: var(--base-color);
+    }
+
+    button {
+        background-color: var(--accent-color);
+    }
+}
+
+/* Contrast demonstration */
+.contrast-demo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contrast-demo .section {
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Section 1: White text on dark background */
+.contrast-demo .section-1 {
+    background-color: var(--base-color-dark);
+    color: #fff;
+}
+
+/* Section 2: Black text on light background */
+.contrast-demo .section-2 {
+    background-color: var(--background-color);
+    color: var(--base-color);
+}
+
+.contrast-demo .section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contrast-demo .section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.contrast-demo .section-1 h2 {
+    color: #ffffff; 
+}

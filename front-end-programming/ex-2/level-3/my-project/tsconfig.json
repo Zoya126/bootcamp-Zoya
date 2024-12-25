@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",               // Modern JavaScript support
+    "module": "esnext",               // Use ES modules
+    "moduleResolution": "node",       // Resolve modules in Node.js style
+    "strict": true,                   // Enable strict type-checking
+    "jsx": "react-jsx",               // Use React JSX runtime
+    "esModuleInterop": true,          // Enable compatibility with CommonJS modules
+    "skipLibCheck": true,             // Skip type-checking for library files
+    "forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
+    "resolveJsonModule": true,        // Allow importing JSON files
+    "isolatedModules": true           // Required for Vite
+  },
+  "include": ["src"],                 // Include your source folder
+  "exclude": ["node_modules"]         // Exclude dependencies
+}
