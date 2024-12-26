@@ -1,0 +1,129 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  background-color:  hsl(206, 55%, 85%); 
+  margin: 0; 
+  padding: 0; 
+}
+
+.header {
+  position: relative; 
+  width: 100%;
+  height: 36vh; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.header-image {
+  width: 100%; 
+  height: 70%; 
+  object-fit: cover; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  opacity: calc(100% - 60%);
+  
+}
+
+.header-content {
+  text-align: center;
+  color: #000000; 
+  z-index: 1; 
+  position: absolute;/* Position the header content absolutely */
+  top: 35%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Center the content */
+}
+
+.title {
+  font-size: 2.5rem; 
+  margin-bottom: 20px; 
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 70%; 
+  margin-left: 16%;
+}
+
+.search-input {
+  width: 400px;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 50px;
+  background-color: #02013b; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.loading {
+  color: #ff0000; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.error {
+  color: #dc3545; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.results {
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  max-width: 1200px; 
+  margin-top: 20px;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.result-card {
+  background-color:  hsl(295, 7%, 69%);        
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px; 
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.result-title {
+  color: #110323;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.short-form {
+  display: inline-block;
+  background-color: #e6f0ff; 
+  color: #3aa0f4; 
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.result-description {
+  color: #2a2828;
+  font-size: 0.9rem;
+}

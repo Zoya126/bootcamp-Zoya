@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Target Identification Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #0a3749;
+            color: white;
+            padding: 4px 15px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #4f4f4f;
+            color: white;
+            text-align: center;
+            padding: 7px 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .note-section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Disease Target Identification Notes</h1>
+</header>
+
+<main>
+    <div class="note-section">
+        <h2>Key Points to Remember</h2>
+        <ul>
+            <li>Use precise disease names to avoid confusion (e.g., Type 2 Diabetes instead of just Diabetes).</li>
+            <li>Diseases may belong to hierarchical systems, with general and specific terms.</li>
+            <li>Classification systems like EFO (Experimental Factor Ontology) and MONDO (Monarch Disease Ontology) are critical for structured disease exploration.</li>
+            <li>The EBI OLS (Ontology Lookup Service) provides APIs to fetch disease data and hierarchy.</li>
+            <li>Understand the importance of ontology codes (e.g., EFO or MONDO) for identifying diseases.</li>
+        </ul>
+    </div>
+
+    <div class="note-section">
+        <h2>Challenges Faced During API Fetching</h2>
+        <ul>
+            <li>Understanding API documentation for EBI OLS to fetch hierarchical disease data.</li>
+            <li>Handling API rate limits and ensuring efficient data fetching.</li>
+            <li>Parsing complex JSON responses to extract relevant information like disease names, descriptions, and codes.</li>
+            <li>Implementing search functionality with auto-suggestions and hierarchy visualization.</li>
+            <li>Ensuring error handling for cases like network issues or invalid search terms.</li>
+        </ul>
+    </div>
+
+    <div class="note-section">
+        <h2>Improvements for Widget Usability</h2>
+        <ul>
+            <li>Provide a clean and intuitive UI for searching and exploring diseases.</li>
+            <li>Allow users to select diseases and copy their corresponding EFO or MONDO codes.</li>
+            <li>Include a brief description of selected diseases for better context.</li>
+            <li>Optimize API calls to minimize latency and enhance performance.</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>AI Conversation   <a href="https://chatgpt.com/share/676dd6f2-ade8-800d-8316-7fe77b416709" target="_blank" style="color: #4CAF50; text-decoration: none;"> click here!!</a> </p>
+
+</footer>
+
+</body>
+</html>
