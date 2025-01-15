@@ -1,749 +1,136 @@
- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-       <style>
-         body {
-  font-family: 'Inter', system-ui, sans-serif;
-  background: #a6c0dd;
-  color: #a6c0dd;
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background: #a6c0dd;
-  color: white;
-  padding: 0.5rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-}
-
-footer {
-  background: #a6c0dd;
-  color: white;
-  padding: 0.5rem;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-h1 {
-  color: #2d4a7a;
-  text-align: center;
-  margin: 1rem 0;
-  font-size: 1.25rem;
-}
-header {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .github-link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
-    }
-    .github-link a {
-      text-decoration: none;
-      color: #2a2564;
-      font-size: 1.5rem;
-      display: flex;
-      align-items: center;
-    }
-    .github-link a:hover {
-      color: #a71139; /* GitHub blue color */
-    }
-    .github-link i {
-      margin-right: 8px;
-    }
-
-table {
-  width: 70%;
-  max-width: 800px;
-  margin: 1rem auto;
-  border-radius: 6px;
-  overflow: hidden;
-  background:  #a6c0dd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
-}
-
-th, td {
-  padding: 0.4rem 0.6rem;
-  text-align: left;
-  border-bottom: 1px solid #e2e8f0;
-  font-size: 0.75rem;
-}
-
-th {
-  background: #2267b0;
-  color: white;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-  table {
-    width: 85%;
-    margin: 0.5rem auto;
-  }
-  
-  th, td {
-    padding: 0.3rem;
-    font-size: 0.7rem;
-  }
-  
-  h1 {
-    font-size: 1rem;
-    margin: 0.75rem 0;
-  }
-}
-    </style>
-    <header><h1>BOOTCAMP - ZOYA </h1>
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
-  
-      <a href="https://github.com/Zoya126/bootcamp-Zoya" target="_blank">
-        <i class="fab fa-github"></i> Visit GitHub
-      </a>
-    </header>
-
-    <title>Task - day 1</title>
-  </head>
-  <body>
-    <h1>BootCamp Day-1 </h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Exercise</th>
-
-          <th>Solution1</th>
-          <th>Solution2</th>
-          <th>Solution3</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Exercise 1</td>
-
-          <td>
-            <p> header, footer and maincontent</p>
-            <a href="./html-css/ex-1/solution-1.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>Golden Layout, Navigation and Table</p>
-            <a href="./html-css/ex-1/solution-2.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>Extra Additions with images & nested elements</p>
-            <a href="./html-css/ex-1/solution-3.html" target="_blank">Link</a>
-          </td>
-          <td><a href="./html-css/ex-1/notes.html" target="_blank">Notes</a></td>
-        </tr>
-        <tr>
-          <td>Exercise 2</td>
-          <td>
-            <p>CSS Variables</p>
-            <a href="./html-css/ex-2/solution-1.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>Default Values of Variables and using of n-th child</p>
-            <a href="./html-css/ex-2/solution-2.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>
-               Theme switcher
-            </p>
-            <a href="./html-css/ex-2/solution-3.html" target="_blank">Link</a>
-          </td>
-          <td><a href="./html-css/ex-2/notes.html" target="_blank">Notes</a></td>
-        </tr>
-        <tr>
-          <td>Exercise 3</td>
-          <td>
-            <p>Blog post using Classless CSS</p>
-            <a href="./html-css/ex-3/solution-1.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>Adding some elements & styling them</p>
-            <a href="./html-css/ex-3/solution-2.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>Using a classless CSS Framework </p>
-            <a href="./html-css/ex-3/solution-3.html" target="_blank">Link</a>
-          </td>
-          <td><a href="./html-css/ex-3/notes.html" target="_blank">Notes</a></td>
-        </tr>
-        <tr>
-          <td>Exercise 4</td>
-          <td>
-            <p> using vh and vw</p>
-            <a href="./html-css/ex-4/solution-1.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>min() max() and clamp()</p>
-            <a href="./html-css/ex-4/solution-2.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>flexible grids & fluid typography</p>
-            <a href="./html-css/ex-4/solution-3.html" target="_blank">Link</a>
-          </td>
-          <td><a href="./html-css/ex-4/notes.html" target="_blank">Notes</a></td>
-        </tr>
-        <tr>
-          <td>Exercise 5</td>
-          <td>
-            <p>Golden layout with styling and grids </p>
-            <a href="./html-css/ex-5/solution-1.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>Golden layout with Grid properties and overflow content</p>
-            <a href="./html-css/ex-5/solution-2.html" target="_blank">Link</a>
-          </td>
-          <td>
-            <p>Golden layout with minmax and responsive layout</p>
-            <a href="./html-css/ex-5/solution-3.html" target="_blank">Link</a>
-          </td>
-          <td><a href="./html-css/ex-5/notes.html" target="_blank">Notes</a></td>
-        </tr>
-        <tr>
-          <td>Exercise 6</td>
-          <td>
-            <p>
-              Different blogs and newsletters:
-            </p>
-            
-            <a href="./html-css/ex-6/solution.html" target="_blank">Link</a>
-          </td>
-
-          <td><a href="./html-css/ex-6/notes.html" target="_blank">Notes</a></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <body>
-      <h1>BootCamp Day-2 </h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Exercise</th>
-  
-            <th>Solution1</th>
-            <th>Solution2</th>
-            <th>Solution3</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Exercise 1</td>
-  
-            <td>
-              <p> JS code and font styles added</p>
-              <a href="./design/ex-2-1/solution-2-1.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>Use of google fonts and dorp,cap,shadow</p>
-              <a href="./design/ex-2-1/solution-2-2.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>Geist font and typographic hierarchy</p>
-              <a href="./design/ex-2-1/solution-2-3.html" target="_blank">Link</a>
-            </td>
-            <td><a href="./design/ex-2-1/notes.html" target="_blank">Notes</a></td>
-          </tr>
-          <tr>
-            <td>Exercise 2</td>
-            <td>
-              <p>version-1 => Add card & Monochromatic Themes</p>
-              <a href="./design/ex-2-2/solution-2-1-1.html" target="_blank">Link</a>
-
-              <p>version- 2 => Complementary color scheme</p>
-              <a href="./design/ex-2-2/solution-2-1-2.html" target="_blank">Link</a>
-
-              <p>version-3 =>  incorporating an accent color</p>
-              <a href="./design/ex-2-2/solution-2-1-3.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>Theme switcher</p>
-              <a href="./html-css/ex-2/solution-3.html"_blank">Link</a>
-            </td>
-            <td>
-              <p>
-                 gradient theme & responsiveness
-              </p>
-              <a href="./design/ex-2-2/solution-2-3.html" target="_blank">Link</a>
-            </td>
-            <td><a href="./design/ex-2-2/notes.html" target="_blank">Notes</a></td>
-          </tr>
-          <tr>
-            <td>Exercise 3</td>
-            <td>
-              <p>Add icons using font awesome</p>
-              <a href="./design/ex-2-3/solution-2-1.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>svg file and hover effects</p>
-              <a href="./design/ex-2-3/solution-2-2.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>Home, about, contacts, download, uplaod icons </p>
-              <a href="./design/ex-2-3/solution-2-3.html" target="_blank">Link</a>
-            </td>
-            <td><a href="./design/ex-2-3/notes.html" target="_blank">Notes</a></td>
-          </tr>
-          <tr>
-            <td>Exercise 4</td>
-            <td>
-              <p> Add 3 images using placeholder image service</p>
-              <a href="./design/ex-2-4/solution-2-1.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>full-bleed image as a page header</p>
-              <a href="./design/ex-2-4/solution-2-2.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>responsiveness & lazy loading techniques.</p>
-              <a href="./design/ex-2-4/solution-2-3.html" target="_blank">Link</a>
-            </td>
-            <td><a href="./design/ex-2-4/notes.html" target="_blank">Notes</a></td>
-          </tr>
-          <tr>
-            <td>Exercise 5</td>
-            <td>
-              <p>layout of medium.com article </p>
-              <a href="./design/ex-2-5/solution-2-1.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>visual hierarchy</p>
-              <a href="./design/ex-2-5/solution-2-2.html" target="_blank">Link</a>
-            </td>
-            <td>
-              <p>NA</p>
-              
-            </td>
-            <td><a href="./design/ex-2-5/notes.html" target="_blank">Notes</a></td>
-          </tr>
-          <tr>
-            <td>Exercise 6</td>
-            <td>
-              <p>
-               Problems in website
-              </p>
-             
-              <a href="./design/ex-2-6/notes.html" target="_blank">Link</a>
-            </td>
-  
-            <td>
-              <p>comparing websites</p>
-              <a href="./design/ex-2-6/solution-2-2.html" target="_blank">Link</a>
-            </td>
-            <td><a href="" target="_blank"></a></td>
-
-            <td><a href="./design/ex-2-6/notes.html" target="_blank">Notes</a></td>
-            
-
-          </tr>
-        </tbody>
-      </table>
-
-    </tbody>
-  </table>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BootCamp Day-3 Student Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #a5fbde 0%, #6081c9 100%);
+        }
+        .dark .gradient-bg {
+            background: linear-gradient(135deg, #030720 0%, #2f0b45 100%);
+        }
+        .card-gradient {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%);
+        }
+        .dark .card-gradient {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+        }
+    </style>
 </head>
-<body>
-  <h1>BootCamp Day-3</h1>
-  <table>
-      <thead>
-          <tr>
-              <th>Name</th>
-              <th>Detailed Review</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>Abhijeet</td>
-              <td><a href="./design-review/Abhijeet.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Anik</td>
-              <td><a href="./design-review/Anik.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Balaji</td>
-              <td><a href="./design-review/Balaji.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Koushik</td>
-              <td><a href="./design-review/Koushik.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Laxmi</td>
-              <td><a href="./design-review/Laxmi.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Pradyot</td>
-              <td><a href="./design-review/Pradyot.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Rohan</td>
-              <td><a href="./design-review/Rohan.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Shifath</td>
-              <td><a href="./design-review/Shifath.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Shilpa</td>
-              <td><a href="./design-review/Shilpa.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Sonia</td>
-              <td><a href="./design-review/Sonia.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Uday</td>
-              <td><a href="./design-review/Uday.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Varun</td>
-              <td><a href="./design-review/Varun.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Yashraj</td>
-              <td><a href="./design-review/Yashraj.html" class="button">View Review</a></td>
-          </tr>
-          <tr>
-              <td>Yashwanth</td>
-              <td><a href="./design-review/Yashwant.html" class="button">View Review</a></td>
-          </tr>
-      </tbody>
-  </table>
+<body class="transition-all duration-300" x-data="{ darkMode: false }" :class="darkMode ? 'dark bg-gray-900' : 'bg-gray-50'">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+    <!-- Theme Toggle -->
+    <button 
+        @click="darkMode = !darkMode" 
+        class="fixed top-4 right-4 p-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-white/90 backdrop-blur-md border border-gray-200"
+        :class="darkMode ? 'text-yellow-400' : 'text-indigo-600'"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" :class="{ 'hidden': darkMode }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" :class="{ 'hidden': !darkMode }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
+        </svg>
+    </button>
+
+    <!-- Hero Section with Gradient Background -->
+    <div class="gradient-bg min-h-screen">
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center mb-16 animate-fade-in">
+                <div class="flex justify-center mb-6">
+                    <div class="relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 animate-float" :class="darkMode ? 'text-white' : 'text-gray-800'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                       
+                    </div>
+                </div>
+                <h1 class="text-5xl font-bold mb-4" :class="darkMode ? 'text-white' : 'text-gray-900'">Project Portfolio</h1>
+                <p class="text-xl" :class="darkMode ? 'text-white/80' : 'text-gray-600'">Explore my collection of innovative projects</p>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Project 1 -->
+                <div class="group animate-fade-in" style="animation-delay: 200ms">
+                    <a href="https://zoya-ex-1.bootcamp.aganitha.ai/" target="_blank" rel="noopener noreferrer" 
+                       class="block p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl border" :class="darkMode ? 'border-white/20' : 'border-gray-200'" class="card-gradient">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" :class="darkMode ? 'text-white/90' : 'text-gray-700'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <h3 class="text-2xl font-semibold ml-3" :class="darkMode ? 'text-white' : 'text-gray-900'">Project 1</h3>
+                        </div>
+                        <p class="mb-4" :class="darkMode ? 'text-white/70' : 'text-gray-600'">Official next-js startup</p>
+                        <div class="flex items-center transition-colors" :class="darkMode ? 'text-white/90 group-hover:text-white' : 'text-gray-700 group-hover:text-gray-900'">
+                            <span>Explore Project</span>
+                            <svg class="w-5 h-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group animate-fade-in" style="animation-delay: 400ms">
+                    <a href="https://zoya-ex-2.bootcamp.aganitha.ai/" target="_blank" rel="noopener noreferrer" 
+                       class="block p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl border" :class="darkMode ? 'border-white/20' : 'border-gray-200'" class="card-gradient">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" :class="darkMode ? 'text-white/90' : 'text-gray-700'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                            <h3 class="text-2xl font-semibold ml-3" :class="darkMode ? 'text-white' : 'text-gray-900'">Project 2</h3>
+                        </div>
+                        <p class="mb-4" :class="darkMode ? 'text-white/70' : 'text-gray-600'">Kaminari starter</p>
+                        <div class="flex items-center transition-colors" :class="darkMode ? 'text-white/90 group-hover:text-white' : 'text-gray-700 group-hover:text-gray-900'">
+                            <span>Explore Project</span>
+                            <svg class="w-5 h-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group animate-fade-in" style="animation-delay: 600ms">
+                    <a href="https://zoya-ex-4.bootcamp.aganitha.ai/" target="_blank" rel="noopener noreferrer" 
+                       class="block p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl border" :class="darkMode ? 'border-white/20' : 'border-gray-200'" class="card-gradient">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" :class="darkMode ? 'text-white/90' : 'text-gray-700'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                            </svg>
+                            <h3 class="text-2xl font-semibold ml-3" :class="darkMode ? 'text-white' : 'text-gray-900'">Project 3</h3>
+                        </div>
+                        <p class="mb-4" :class="darkMode ? 'text-white/70' : 'text-gray-600'">Product dashboard</p>
+                        <div class="flex items-center transition-colors" :class="darkMode ? 'text-white/90 group-hover:text-white' : 'text-gray-700 group-hover:text-gray-900'">
+                            <span>Explore Project</span>
+                            <svg class="w-5 h-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-  <header>
-    <header>
-        <h1>BootCamp Day-4</h1 >
-        <!-- <p> <h2>Notes with execution screenshots</h2</nav></p> -->
-    </header>
-    <div class="container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Exercise No.</th>
-                    <th>Topic</th>
-                    <th>Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Exercise 1 -->
-                <tr>
-                    <td>1</td>
-                    <td>Setting Up npm</td>
-                    <td><a href="./programming-basics/ex-1/notes.html" target="_blank">View Details</a></td>
-                </tr>
-
-                <!-- Exercise 2 -->
-                <tr>
-                    <td>2</td>
-                    <td>Command-Line Program</td>
-                    <td><a href="./programming-basics/ex-2/notes.html" target="_blank">View Details</a></td>
-                </tr>
-
-                <!-- Exercise 3 -->
-                <tr>
-                    <td>3</td>
-                    <td>Using Logging (Winston)</td>
-                    <td><a href="./programming-basics/ex-3/notes.html" target="_blank">View Details</a></td>
-                </tr>
-
-                <!-- Exercise 4 -->
-                <tr>
-                    <td>4</td>
-                    <td>Debugging (debug)</td>
-                    <td><a href="./programming-basics/ex-4/notes.html" target="_blank">View Details</a></td>
-                </tr>
-
-                <!-- Exercise 5 -->
-                <tr>
-                    <td>5</td>
-                    <td>Managing Environment Variables (dotenv)</td>
-                    <td><a href="./programming-basics/ex-5/notes.html" target="_blank">View Details</a></td>
-                </tr>
-
-                <!-- Exercise 6 -->
-                <tr>
-                    <td>6</td>
-                    <td>YAML Configuration (config)</td>
-                    <td><a href="./programming-basics/ex-6/notes.html" target="_blank">View Details</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="container">
-      <table>
-        <thead>
-          <h1>BootCamp Day-5</h1 >
-          <tr>
-            <th>Exercise No.</th>
-            <th>Topic</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Exercise 1 -->
-          <tr>
-            <td>1</td>
-            <td>Basic Front End</td>
-            <td><a href="./front-end-programming/ex-1/notes.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Exercise 2 -->
-          <tr>
-            <td>2</td>
-            <td>Using Tools</td>
-            <td><a href="./front-end-programming/ex-2/notes.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Exercise 3 -->
-          <tr>
-            <td>3</td>
-            <td>Starting with Vite</td>
-            <td><a href="./front-end-programming/ex-3/notes.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Exercise 4 -->
-          <tr>
-            <td>4</td>
-            <td>Vite Full Exercise</td>
-            <td><a href="./front-end-programming/ex-4/notes.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Exercise 5 -->
-          <tr>
-            <td>5</td>
-            <td>Chrome DevTools Exploration</td>
-            <td><a href="./front-end-programming/ex-5/notes.html" target="_blank">View Details</a></td>
-            
-          </tr>
-    
-          <!-- Exercise 6 -->
-          <tr>
-            <td>6</td>
-            <td>Basic Project</td>
-            <td><a href="./front-end-programming/ex-6/notes.html" target="_blank">View Details</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="container">
-      <table>
-        <thead>
-          <h1>BootCamp Day- 6 & 7</h1>
-          <tr>
-            <th>Exercise No.</th>
-            <th>Topic</th>
-            <th>Link </th>
-            <th>Notes</th> <!-- New column header for additional link -->
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Exercise 1 -->
-          <tr>
-            <td>1</td>
-            <td>Data Exploration Exercise</td>
-            <td><a href="./basic-capstone/level-1/" target="_blank">Live Link</a></td>
-            <td><a href="./basic-capstone/level-1/notes.html" target="_blank">Notes</a></td> <!-- New link -->
-          </tr>
-    
-          <tr>
-            <td>2</td>
-            <td>Web component development</td>
-            <td><a href="./basic-capstone/level-2/" target="_blank">Live Link</a></td>
-            <td><a href="./basic-capstone/level-2/notes.html" target="_blank">Notes</a></td> <!-- New link -->
-          </tr>
-    
-          <tr>
-            <td>3</td>
-            <td>Static site generation</td>
-            <td><a href="./basic-capstone/level-3/Amazon 5/" target="_blank">Live Link</a></td>
-            <td><a href="./basic-capstone/level-3/notes.html" target="_blank">Notes</a></td> <!-- New link -->
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-
-    <div class="container">
-      <table>
-        <thead>
-          <h1>BootCamp Day-8</h1>
-          <!-- <h3>Review Part</h3> -->
-          <tr>
-            <th>No.</th>
-            <th>Name</th>
-            <th>Review</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Student 1 -->
-          <tr>
-            <td>1</td>
-            <td>Abhijeet A S</td>
-            <td><a href="./basic-review/review/Abhijeet.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 2 -->
-          <tr>
-            <td>2</td>
-            <td>Kousik Bose</td>
-            <td><a href="./basic-review/review/" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 3 -->
-          <tr>
-            <td>3</td>
-            <td>Pradyot Soni</td>
-            <td><a href="bhdsrt" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 4 -->
-          <tr>
-            <td>4</td>
-            <td>Davuluri Yashwant Rao</td>
-            <td><a href="./basic-review/review/Yashwant.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 5 -->
-          <tr>
-            <td>5</td>
-            <td>Yashraj Singh</td>
-            <td><a href="./basic-review/review/Yashraj.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 6 -->
-          <tr>
-            <td>6</td>
-            <td>Shifath Ali</td>
-            <td><a href="./basic-review/review/Shifath.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 7 -->
-          <tr>
-            <td>7</td>
-            <td>Rohan B</td>
-            <td><a href="./basic-review/review/rohan.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 8 -->
-          <tr>
-            <td>8</td>
-            <td>Vadlamani Uday Kumar</td>
-            <td><a href="./basic-review/review/uday.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 9 -->
-          <tr>
-            <td>9</td>
-            <td>Shilpa</td>
-            <td><a href="./basic-review/review/shilpa.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 10 -->
-          <tr>
-            <td>10</td>
-            <td>Zoya Haider</td>
-            <td><a href="./basic-review/review/My-own.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 11 -->
-          <tr>
-            <td>11</td>
-            <td>Balaji S.K</td>
-            <td><a href="./basic-review/review/Balaji.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 12 -->
-          <tr>
-            <td>12</td>
-            <td>Guduru Lakshmi Tanuja</td>
-            <td><a href="igcbv" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 13 -->
-          <tr>
-            <td>13</td>
-            <td>Sonia Shaik</td>
-            <td><a href="./basic-review/review/sonia.html" target="_blank">View Details</a></td>
-          </tr>
-    
-          <!-- Student 14 -->
-          <tr>
-            <td>14</td>
-            <td>Tharala Varun Sai Yadav</td>
-            <td><a href="./basic-review/review/varun.html" target="_blank">View Details</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-      
-    <div class="container">
-      <table>
-          <thead>
-              <tr>
-                  <th>Exercise No.</th>
-                  <th>Topic</th>
-                  <th>Link</th>
-              </tr>
-          </thead>
-          <tbody>
-              <!-- Exercise 1 -->
-              <tr>
-                  <td>1</td>
-                  <td>Research paper</td>
-                  <td><a href="https://research-paper-rosy.vercel.app/" target="_blank">View Details</a></td>
-              </tr>
-
-              <!-- Exercise 2 -->
-              <tr>
-                  <td>2</td>
-                  <td>Weather-app</td>
-                  <td><a href="https://weather-application-pearl-seven.vercel.app/" target="_blank">View Details</a></td>
-              </tr>
-  </tbody
-</table>
-</div>
-  
-<div class="container">
-  <table>
-    <thead>
-      <h1>BootCamp Day-8</h1>
-       <h1 >Disease Ontology Exploration</h1 > 
-    </thead>
-    <tbody>
-      <!-- Exercise 1 -->
-      <tr>
-        <td></td>
-      
-        <td><a href="https://disease-ontology-exploration-snowy.vercel.app/" target="_blank">Live Link</a></td>
-        <td><a href="./Realworld-project-1/notes.html" target="_blank">Notes</a></td> <!-- New link -->
-      </tr>
-    
-    
-  </body>
-</html> 
